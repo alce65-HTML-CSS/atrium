@@ -10,3 +10,15 @@
 ```shell
 git init
 ```
+
+## HTML: Sectioning ##
+
+<body>
+<header>
+<h1>...
+<section>
+<article>
+<aside>
+<footer>
+
+##
