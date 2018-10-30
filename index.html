@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola Mundo</title>
+    <base href="/">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" type="module"></script> 
 </head>
+
 <body>
    <header>
         <h1>Título principal</h1>
+        <img src="./assets/AJ_Digital_Camera.svg" alt="logo de una camara">
         <nav id="inicio">
             <ol>
                 <li><a href="#item1">Item 1</a></li>
                 <li><a href="#item2">Item 2</a></li>
                 <li><a href="#item3">Item 3</a></li>
+                <li><a href="#form">Formulario</a></li>
+                <li><a href="https://www.google.es">Google</a></li>
             </ol>
         </nav>
    </header>
    <main>
         <section id="item1">
             <h2>Item 1</h2>
+            <embed src="./assets/AJ_Digital_Camera.svg">
             <article>
                 <h3>Article 1</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe debitis sint sequi officia odio, quod nam, expedita porro amet illum ab exercitationem repellat, voluptatibus est. Quisquam dolores nobis amet et.</p>
@@ -44,6 +52,15 @@
             <h2>Item 2</h2>
             <article>
                 <h3>Article 1</h3>
+                <video 
+                    controls
+                    width="400px"
+                    >
+                    <source src="./assets/Ghost_in_the_Shell_Opening.webm"
+                        type='video/webm'> 
+                    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" 
+                        type="video/mp4">
+                </video>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla eaque veniam dolorum voluptatem,
                     soluta ducimus minus id facere rerum repellendus distinctio similique explicabo et qui enim non magnam nostrum!</p>
                 <p>Quos accusantium quo voluptates harum distinctio corrupti, ipsa iste possimus, doloremque minus molestias odio,
@@ -64,14 +81,77 @@
                 explicabo.</p>
                 <a href="#inicio">Inicio</a>
         </section>
+        <section id="form">
+            <h2>Ejemplo de formulario</h2>
+            <form action="" method="GET" id="form1">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Nombre de" required minlength="2" maxlength="10">
+                    </div>
+                    <div>
+                         <input type="password" name="passw" id="passw" 
+                         placeholder="Contraseña" 
+                         required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                         title="Incluir May, min, num y spcial char">
+                         <label>Incluir May, min, num y spcial char</label>
+                    </div>
+                    <div>
+                         <input type="email" name="correo" id="correo" placeholder="Correo" required>
+                    </div>
+                   <div>
+                       <textarea name="info" id="info" cols="30" rows="10" placeholder="Información extra"></textarea>
+                   </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <div>
+                        <input type="checkbox" name="isOk" id="isOk">
+                        <label for="isOk">He leido los datos ...</label>
+                    </div>
+                    <div>
+                        <legend>Turnos</legend>
+                        <input type="radio" name="turno" id="tm" value="tm">
+                        <label for="tm">Mañana</label>
+                        <input type="radio" name="turno" id="tt" value="tt">
+                        <label for="tt">Tarde</label>
+                        <input type="radio" name="turno" id="tn" value="tn">
+                        <label for="tn">Noche</label>
+                    </div>
+                    <div>
+                        <label for="destino"></label>
+                        <select name="destino" id="destino">
+                            <option value="Md">Madrid</option>
+                            <option value="Sv">Sevilla</option>
+                            <option value="Vl">Valencia</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Aun más, menos habituales</legend>
+                    <input type="file" name="" id="f">
+                    <input type="search" name="" id="b" placeholder="Buscar">
+                    <input type="number" name="num" id="num" min="4" max="10">
+                    <input type="range" name="rango" id="rango" min="1" max="5">
+                    <input type="date" name="fecha" id="fecha">
+                    <input type="color" name="color" id="color">
+                </fieldset>
+
+                <!-- <input type="submit" value="Enviar"> -->
+                <button type="submit">Enviar</button>
+                <button type="button">Enviar sin submit</button>
+            </form>
+        </section>
    </main>
    <aside>
        <h2>Aside 1</h2>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/6e2iI1XxumE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
        <p>Esto es de <time datetime="2018-10-28" pubdate>ayer</time>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ratione ea fuga, eaque obcaecati laudantium? Iste ratione est at. Blanditiis ducimus eum dolorum quaerat possimus repellendus porro molestias perferendis ad!</p>
        <p>Sunt porro blanditiis quo totam eveniet quas, laudantium non in ducimus adipisci mollitia sit culpa quae architecto nemo tempora natus. Doloremque suscipit et non vero incidunt id a porro aliquid.</p>
+       <iframe class="full" src="https://www.agenciatributaria.es/" frameborder="1"></iframe>
    </aside>
    <footer>
        <address></address>
-   </footer>
+   </footer>  
 </body>
 </html>
