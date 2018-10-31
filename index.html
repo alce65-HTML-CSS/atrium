@@ -6,13 +6,16 @@
     <title>Hola Mundo</title>
     <base href="/">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" type="module"></script> 
 </head>
 
 <body>
    <header>
-        <h1>Título principal</h1>
+        <h1>Título principal <i id="btnInicial" class="fas fa-address-book boton"></i></h1>
         <img src="./assets/AJ_Digital_Camera.svg" alt="logo de una camara">
         <nav id="inicio">
             <ol>
@@ -31,14 +34,14 @@
             <embed src="./assets/AJ_Digital_Camera.svg">
             <article>
                 <h3>Article 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe debitis sint sequi officia odio, quod nam, expedita porro amet illum ab exercitationem repellat, voluptatibus est. Quisquam dolores nobis amet et.</p>
+                <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe debitis sint sequi officia odio, quod nam, expedita porro amet illum ab exercitationem repellat, voluptatibus est. Quisquam dolores nobis amet et.</p>
                 <blockquote cite="de donde viene" title="de donde viene">Animi dolore saepe autem voluptates eius minima id. Aperiam, itaque a? Accusantium, quaerat incidunt. Dicta numquam velit, iusto sint explicabo eligendi veniam veritatis quia praesentium odio ducimus voluptates facere exercitationem.</blockquote>
                 <figure>
                     <img src="https://via.placeholder.com/150" alt="imagen simulada">
                     <figcaption>Título de la imagen</figcaption>
                 </figure>
                 
-                <p>Illo, tenetur! Officiis qui non fugit nisi omnis eos voluptatum incidunt consequuntur vitae error nesciunt voluptas odit voluptate laboriosam aliquid iusto, hic, vero sint quas veniam esse, doloribus impedit! Odit.</p>       </article>
+                <p class="ultimo">Illo, tenetur! Officiis qui non fugit nisi omnis eos voluptatum incidunt consequuntur vitae error nesciunt voluptas odit voluptate laboriosam aliquid iusto, hic, vero sint quas veniam esse, doloribus impedit! Odit.</p>       </article>
             <article>
                 <h3>Article 2</h3>
                 <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Aliquid nemo similique facere <em>reprehenderit</em> omnis sed nulla molestias quae beatae? Ipsam exercitationem officiis est pariatur enim aut perspiciatis officia, porro nihil?</p>
@@ -151,6 +154,15 @@
                 <p>Unde odit porro nemo perferendis harum magni aliquid soluta dolor, cum voluptas quae quia nostrum accusantium recusandae neque, eveniet molestias corporis dolorum nisi labore. Hic inventore laudantium at repellat nostrum.</p>
             </details>
         </section>
+        <button type="button" id="mas-info">Más info</button>
+        <dialog id="my-modal">
+            <p>It seems that we won't see native dialogs after all.</p>
+            <button id="ok-btn">OK :(</button>
+        </dialog>
+        <template id="my-template">
+            <p>Esto se hará visible desde código</p>
+        </template>
+
    </main>
    <aside>
        <h2>Aside 1</h2>
