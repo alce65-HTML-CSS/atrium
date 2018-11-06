@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-grid.css">
     <script src="./js/app.js" type="module"></script> 
 </head>
 
@@ -27,6 +27,9 @@
                         <li><a href="#news">Novedades HTML 5.x</a></li>
                         <li><a href="https://www.google.es">Google</a></li>
                     </ol>
+                    <div class="icon-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </nav>
         </header>
         <main>
@@ -167,7 +170,11 @@
         </main>
         <aside>
             <h2>Aside 1</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6e2iI1XxumE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <div class="iframe-container">
+                <!--  width="560" height="315" -->
+                <iframe src="https://www.youtube.com/embed/6e2iI1XxumE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
+            
             <p>Esto es de <time datetime="2018-10-28" pubdate>ayer</time>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ratione ea fuga, eaque obcaecati laudantium? Iste ratione est at. Blanditiis ducimus eum dolorum quaerat possimus repellendus porro molestias perferendis ad!</p>
             <p>Sunt porro blanditiis quo totam eveniet quas, laudantium non in ducimus adipisci mollitia sit culpa quae architecto nemo tempora natus. Doloremque suscipit et non vero incidunt id a porro aliquid.</p>
             <iframe class="full" src="https://www.agenciatributaria.es/" frameborder="1"></iframe>
